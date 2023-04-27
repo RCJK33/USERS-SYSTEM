@@ -21,10 +21,12 @@ function validate(user) {
     // Check for empty elemnts
     if (user.email=="") {
         alert("Hey fill out the input")
+        valid = false;
     }
 
     if (user.password=="") {
         alert("Hey fill out the pass")
+        valid = false;
     }
 
     // Display alert()
@@ -45,9 +47,11 @@ function register() {
     let inputColor = $("#selColor").val()
 
     let newUser = new User(inputEmail,inputPass,inputFName,inputLName,inputAge,inputAddress,inputPhone,inputPayment,inputColor);
-    validate(newUser);
+    if (validate(newUser)) {
+        console.log(newUser);
+        saveUser(newUser);
+    }
     // display the newUser on the console
-    console.log(newUser);
     //clear the form
-    $('input').val("")
+    $('input').val("");
 }

@@ -4,68 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>Welcome to my awesome registration system</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="users.html">Users</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="users.html">Users</a>
         </nav>
     </header>
     <!-- form whit email, password, name (F and L), age, address
         , phone no., payment, color -->
-    <div>
+    <div class="form">
         <form action="">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
+            <div class="mb-3">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control form-control-sm" type="email" id="email">
             </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password">
+            <div class="mb-3">
+                <label class="form-label" for="password">Password:</label>
+                <input class="form-control form-control-sm" type="password" id="password">
             </div>
-            <div>
-                <label for="firstName">First ame:</label>
-                <input type="text" id="firstName">
+            <div class="mb-3">
+                <label class="form-label" for="firstName">First ame:</label>
+                <input class="form-control form-control-sm" type="text" id="firstName">
             </div>
-            <div>
-                <label for="lastName">Last name:</label>
-                <input type="text" id="lastName">
+            <div class="mb-3">
+                <label class="form-label" for="lastName">Last name:</label>
+                <input class="form-control form-control-sm" type="text" id="lastName">
             </div>
-            <div>
-                <label for="age">Age:</label>
-                <input type="number" id="age">
+            <div class="mb-3">
+                <label class="form-label" for="age">Age:</label>
+                <input class="form-control form-control-sm" type="number" id="age">
             </div>
-            <div>
-                <label for="address">Address:</label>
-                <input type="text" id="address">
+            <div class="mb-3">
+                <label class="form-label" for="address">Address:</label>
+                <input class="form-control form-control-sm" type="text" id="address">
             </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone">
+            <div class="mb-3">
+                <label class="form-label" for="phone">Phone:</label>
+                <input class="form-control form-control-sm" type="tel" id="phone">
             </div>
-            <div>
-                <label for="payment">Payment:</label>
-                <select name="" id="txtPayment">
+            <div class="mb-3">
+                <label class="form-label" for="payment">Payment:</label>
+                <select class="form-select" name="" id="txtPayment">
                     <option value="cash" disabled selected>Cash</option>
                     <option value="credit">Credit card</option>
-                    <option value="paypal"></option>
+                    <option value="paypal">PayPal</option>
                 </select>
             </div>
-            <div>
-                <label for="color">Color:</label>
-                <input type="color" id="selColor">
+            <div class="mb-3">
+                <label class="form-label" for="color">Color:</label>
+                <input class="form-control form-control-sm form-control-color" type="color" id="selColor">
             </div>
         </form>
         <div>
             <button onclick="register()">Add</button>
+            <button onclick="readUser()">Restore</button>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
     <script src="scripts/register.js"></script>
 </body>
 </html>
