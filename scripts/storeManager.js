@@ -22,6 +22,9 @@ function readUser() {
         return objList;
     }
 
+
+
+
     /* $("#email").val() = pUser[0]
     $("#password").val() = pUser[1]
     $("#firstName").val() = pUser[2]
