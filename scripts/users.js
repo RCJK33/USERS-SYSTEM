@@ -6,17 +6,17 @@ function usersActi() {
 
     for (let i = 0; i < users.length; i++) {
         rows += `
-            <tr class="tr">
+            <tr class="tr" style="background-color: ${users[i].color};">
                 
-                <td class="table-rows">${users[i].email}</td>
-                <td class="table-rows">${users[i].password}</td>
-                <td class="table-rows">${users[i].fname}</td>
-                <td class="table-rows">${users[i].lname}</td>
-                <td class="table-rows">${users[i].age}</td>
-                <td class="table-rows">${users[i].address}</td>
-                <td class="table-rows">${users[i].phone}</td>
-                <td class="table-rows">${users[i].payment}</td>
-                <td class="table-rows">${users[i].color}</td>
+                <td class="table-rows"><p>${users[i].email}</p></td>
+                <td class="table-rows"><p>${users[i].password}</p></td>
+                <td class="table-rows"><p>${users[i].fname}</p></td>
+                <td class="table-rows"><p>${users[i].lname}</p></td>
+                <td class="table-rows"><p>${users[i].age}</p></td>
+                <td class="table-rows"><p>${users[i].address}</p></td>
+                <td class="table-rows"><p>${users[i].phone}</p></td>
+                <td class="table-rows"><p>${users[i].payment}</p></td>
+                <td class="table-rows"><p>${users[i].color}</p></td>
                     
             </tr>
         `;        
