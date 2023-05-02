@@ -1,18 +1,19 @@
 function login() {
-    var email = $('#email').val()
-    var password = $('#password').val()
+    var email = $('#email')
+    var password = $('#password')
     var users = readUser();
     for (let i = 0; i < users.length; i++) {
-        if ((users[i].email === email) && (users[i].password === password)) {
-            console.log("The user is correct")
+        if ((users[i].email === email.val()) && (users[i].password === password.val())) {
+            email.css({'background-color':'Green'});
+            password.css({'background-color':'Green'});
             return;
         }
     }
-    console.log("The user is not correct")
+    alert("The user does not exist")
 }
 
 function init() {
-    $("#btn-login").click(login());
+    $("#btn-login").click(login);
 }
 
 window.onload = init
