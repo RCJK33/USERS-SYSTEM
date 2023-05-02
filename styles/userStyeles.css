@@ -2,6 +2,8 @@
     padding: 0;
 }
 
-td p{
-    color: white;
+.users-table-container{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
 }

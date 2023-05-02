@@ -1,4 +1,12 @@
-.nav-link{
-    background-color: black;
-    color: white;
+.form-container{
+    display: block;
+    margin: 0 auto;
+    padding: 40px 200px;
+}
+
+.btn-add-form-content{
+    display: flex;
+    justify-content: right;
+    width: auto;
+    margin: 20px;
 }

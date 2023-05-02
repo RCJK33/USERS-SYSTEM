@@ -55,3 +55,28 @@ function register() {
     //clear the form
     $('input').val("");
 }
+
+function validatePress() {
+    let inputPass = $('#password');
+    var password = inputPass.val();
+
+    if (password.length < 8) {
+        inputPass.css({'background-color':'red'});        
+    } else {
+        
+        inputPass.css({'background-color':'green'});        
+    }
+}
+
+function init() {
+    $('.form-container').hide();
+    $('.btn-add-form').click(function(){
+        $('.form-container').slideDown(1000);
+    });
+    $('.btn-close-form').click(function(){
+        $('.form-container').hide();
+    });
+    $('#password').keyup(validatePress);
+}
+
+window.onload = init

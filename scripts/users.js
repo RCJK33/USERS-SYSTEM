@@ -6,7 +6,7 @@ function usersActi() {
 
     for (let i = 0; i < users.length; i++) {
         rows += `
-            <tr class="tr" style="background-color: ${users[i].color};">
+            <tr class="tr">
                 
                 <td class="table-rows"><p>${users[i].email}</p></td>
                 <td class="table-rows"><p>${users[i].password}</p></td>
@@ -16,7 +16,7 @@ function usersActi() {
                 <td class="table-rows"><p>${users[i].address}</p></td>
                 <td class="table-rows"><p>${users[i].phone}</p></td>
                 <td class="table-rows"><p>${users[i].payment}</p></td>
-                <td class="table-rows"><p>${users[i].color}</p></td>
+                <td class="table-rows" style="background-color: ${users[i].color};"></td>
                     
             </tr>
         `;        

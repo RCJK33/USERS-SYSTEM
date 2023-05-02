@@ -17,7 +17,6 @@ function readUser() {
         console.log("No Users.");
         return []; // creating the array
     } else {
-        console.log("We have some users.")
         let objList = JSON.parse(user); // Parse back ther string to into array
         return objList;
     }

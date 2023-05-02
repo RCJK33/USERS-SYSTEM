@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/loginStyles.css">
+    <link rel="stylesheet" href="styles/navBarStyles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1>Welcome to my awesome registration system</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="users.html">Users</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="users.html">Users</a>
         </nav>
     </header>
     <!-- form whit email, password, name (F and L), age, address
         , phone no., payment, color -->
-    <div>
+    <div class="login-container">
         <form action="">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username">
+            <div class="input-form-login">
+                <input type="text" id="email" placeholder="Entry your email">
             </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="text" id="password">
+            <div class="input-form-login">
+                <input type="text" id="password" placeholder="Entry your password">
             </div>            
         </form>
-        <div>
-            <button onclick="">Login</button>
+        <div class="btn-form-login">
+            <button id="btn-login">Login</button>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/login.js"></script>
+    
 </body>
 </html>
