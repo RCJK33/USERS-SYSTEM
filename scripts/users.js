@@ -1,7 +1,5 @@
-
 function usersActi() {
     var users = readUser();
-    console.log(users);
     var rows = "";
 
     for (let i = 0; i < users.length; i++) {

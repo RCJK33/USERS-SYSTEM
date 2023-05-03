@@ -10,9 +10,7 @@ class User {
         this.phone = phone;
         this.payment = payment;
         this.color = color;
-
     }
-
 }
 
 function validate(user) {
